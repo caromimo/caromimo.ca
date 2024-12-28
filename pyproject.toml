@@ -2,14 +2,19 @@
 name = "caromimo.ca"
 version = "0.1.0"
 description = "Default template for PDM package"
-authors = [
-    {name = "Caroline Mimeault",email = "carolinemimeault@gmail.com"},
-]
+authors = [{ name = "Caroline Mimeault", email = "carolinemimeault@gmail.com" }]
 dependencies = []
 requires-python = "==3.13.*"
 readme = "README.md"
-license = {text = "MIT"}
+license = { text = "MIT" }
 
 
 [tool.pdm]
 distribution = false
+
+
+[tool.pdm.scripts]
+_.env_file = ".env"
+create = { shell = "docker run -d -e POSTGRES_USER=$DATABASE_USER -e POSTGRES_PASSWORD=$DATABASE_PASSWORD --network=host postgres:16.6" }
+connect = { shell = "psql --host=localhost --username=$DATABASE_USER --dbname=$DATABASE --password" }
+destroy = { shell = "docker stop $(docker ps -q)" }
