@@ -18,3 +18,6 @@ _.env_file = ".env"
 create = { shell = "docker run -d -e POSTGRES_USER=$DATABASE_USER -e POSTGRES_PASSWORD=$DATABASE_PASSWORD --network=host postgres:16.6" }
 connect = { shell = "psql --host=localhost --username=$DATABASE_USER --dbname=$DATABASE --password" }
 destroy = { shell = "docker stop $(docker ps -q)" }
+migration = "migrate create -ext sql -dir migrations -seq"
+migrateup = { shell = "migrate -database $DATABASE_URL -path migrations up" }
+migratedown = { shell = "migrate -database $DATABASE_URL -path migrations down 1" }
