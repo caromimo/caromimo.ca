@@ -1,4 +1,4 @@
-INSERT INTO recipes (title, ingredients, instructions, source, tags) 
+INSERT INTO recipes (title, ingredients, instructions, source, tags, image_path) 
 VALUES ('Braised Pork with Sauerkraut and Apples', 
 '3-4 pound pork loin or shoulder, bone-in,
 1 pound bag of sauerkraut,
@@ -16,10 +16,11 @@ While the oven is coming to temp, shred the pork with tongs or two forks. Mix th
 Return the meat, uncovered, to the oven and roast for another 20-30 minutes until the ends are golden brown but not dried out.
 Serve over mashed potatoes and enjoy!', 
 'https://www.instagram.com/reel/DCFjmkgOPyy/', 
-ARRAY ['diner', 'meat']
+ARRAY ['diner', 'meat'], 
+'braised_pork.png'
 );
 
-INSERT INTO recipes (title, ingredients, instructions, source, tags) 
+INSERT INTO recipes (title, ingredients, instructions, source, tags, image_path) 
 VALUES ('Overnight Focaccia', 
 '500 g white bread flour, 12% protein content or higher,
 420 ml water, slightly warm,
@@ -67,10 +68,11 @@ Step 17
 Let cool for at least 15-20 minutes before cutting in!
 ', 
 'https://www.instagram.com/reel/CstmeLIICOl/', 
-ARRAY ['bread']
+ARRAY ['bread'], 
+'overnight_focaccia.png'
 );
 
-INSERT INTO recipes (title, ingredients, instructions, source, tags) 
+INSERT INTO recipes (title, ingredients, instructions, source, tags, image_path) 
 VALUES ('Homemade Chicken Shawarma', 
 '2.5 lbs of boneless chicken thighs,
 2-3 tablespoons olive oil, 
@@ -100,5 +102,6 @@ Remove the chicken from the oven, tilt the pan over a glass bowl or container to
 Flip the loaf pan onto a cutting board to remove the chicken and cut it into thin slices or strips.
 Serve it up however way you want - as is, on top of a salad, on a power bowl, whatever! This stays well in the fridge in an airtight lid for 4-5 days.', 
 'https://www.instagram.com/shredhappens/reel/C2yTnDMuaRk/?hl=en', 
-ARRAY ['diner', 'meat']
+ARRAY ['diner', 'meat'], 
+'chicken_shawarma.png'
 );

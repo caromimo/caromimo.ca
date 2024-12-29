@@ -6,5 +6,6 @@ CREATE TABLE recipes (
     ingredients TEXT,
     instructions TEXT,
     source TEXT,
-    tags TEXT[]
+    tags TEXT[],
+    image_path TEXT 
 );
