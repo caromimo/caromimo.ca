@@ -36,10 +36,20 @@ async def index(request: Request):
 
 @app.get("/recipes/{recipe_id}", response_class=HTMLResponse)
 async def read_recipe(request: Request, recipe_id):
-    cursor.execute("SELECT TITLE, SOURCE FROM RECIPES WHERE ID = %s", (recipe_id,))
-    results = cursor.fetchone()
+    cursor.execute(
+        "SELECT TITLE, IMAGE_PATH, INGREDIENTS, INSTRUCTIONS, SOURCE FROM RECIPES WHERE ID = %s",
+        (recipe_id,),
+    )
+    [title, image_path, ingredients, instructions, source] = cursor.fetchone()
     return templates.TemplateResponse(
         request=request,
         name="recipe.html",
-        context={"id": recipe_id, "results": results},
+        context={
+            "id": recipe_id,
+            "title": title,
+            "image_path": image_path,
+            "ingredients": ingredients,
+            "instructions": instructions,
+            "source": source,
+        },
     )

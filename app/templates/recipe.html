@@ -6,8 +6,14 @@
 </head>
 
 <body>
-    <h1><a href="{{ url_for('read_item', id=id) }}">Recipe ID: {{ id }}</a></h1>
-    {{results}}
+    <h1>{{title}}</h1>
+    <img src="{{ url_for('static', path=image_path) }}" />
+    <h2>Ingredients: </h2>
+    <p>{{ingredients}}</p>
+    <h2>Instructions: </h2>
+    <p>{{instructions}}</p>
+    <h2> Credits: </h2>
+    <a href="{{source}}">Source</a>
 </body>
 
 </html>
