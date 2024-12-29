@@ -2,9 +2,9 @@
 
 CREATE TABLE recipes (
     id SERIAL PRIMARY KEY,
-    name TEXT NOT NULL,
-    ingredients JSONB,
-    instructions JSONB,
+    title TEXT NOT NULL,
+    ingredients TEXT,
+    instructions TEXT,
     source TEXT,
     tags TEXT[]
 );
