@@ -174,104 +174,127 @@ recipes:
     caption_fr: Focaccia fraîche faite maison
 - title_en: Chicken Shawarma
   title_fr: Shawarma au poulet
-  description_en: 
-  description_fr: 
-  source_en: ""
-  source_fr: ""
+  description_en: Easy, delicious, and healthy.
+  description_fr: Facile, délicieux et sain.
+  source_en: "https://www.instagram.com/shredhappens/reel/C2yTnDMuaRk/?hl=en"
+  source_fr: "https://www.instagram.com/shredhappens/reel/C2yTnDMuaRk/?hl=en"
   instruction_en: |
-    1. 
+    1. Mix all ingredients together.
+    2. Marinate from 2 hours to 2 days.
+    3. Remove from the fridge.
+    4. Preheat the oven to 425*F.
+    5. Pack the marinated chicken tightly into a bread loaf pan (about 8.5x4.5x2.5).
+    6. Pop it into the oven for 45-55 mins at 425F.
+    7. Remove the chicken from the oven, tilt the pan over a glass bowl or container to pour out the excess juices (save the juice to use as broth or to pour over the chicken).
+    8. Flip the loaf pan onto a cutting board to remove the chicken and cut it into thin slices or strips.
+    9. Serve it up however way you want - as is, on top of a salad, on a power bowl, whatever! This stays well in the fridge in an airtight lid for 4-5 days.
   instruction_fr: |
-    1. 
-  prep_time_minutes: 
-  cook_time_minutes: 
-  servings: 
+    1. Mélanger tous les ingrédients ensemble.
+    2. Mariner de 2 heures à 2 jours.
+    3. Retirer du réfrigérateur.
+    4. Préchauffer le four à 220°C (425°F).
+    5. Emballer le poulet mariné serré dans un moule à pain (environ 8,5 x 4,5 x 2,5 pouces).
+    6. Mettre au four pendant 45-55 minutes à 220°C (425°F).
+    7. Retirer le poulet du four, incliner le moule au-dessus d'un bol ou d'un récipient en verre pour verser le jus en excès (conserver le jus pour l'utiliser comme bouillon ou pour le verser sur le poulet).
+    8. Retourner le moule à pain sur une planche à découper pour retirer le poulet et le couper en fines tranches ou en lanières.
+    9. Servez-le comme vous voulez - tel quel, sur une salade, dans un bol de power bowl, peu importe ! Il se conserve bien au réfrigérateur dans un couvercle hermétique pendant 4-5 jours.
+  prep_time_minutes: 15
+  cook_time_minutes: 55
+  servings: 10
   ingredients: 
-  - name_en: 
-    name_fr: 
-    quantity: 
-    unit_en: 
-    unit_fr: 
-  - name_en: 
-    name_fr: 
-    quantity: 
-    unit_en: 
-    unit_fr: 
-  - name_en: 
-    name_fr: 
-    quantity: 
-    unit_en: 
-    unit_fr: 
-  - name_en: 
-    name_fr: 
-    quantity: 
-    unit_en: 
-    unit_fr: 
-  - name_en: 
-    name_fr: 
-    quantity: 
-    unit_en: 
-    unit_fr: 
-  - name_en: 
-    name_fr: 
-    quantity: 
-    unit_en: 
-    unit_fr: 
-  - name_en: 
-    name_fr: 
-    quantity: 
-    unit_en: 
-    unit_fr: 
+  - name_en: boneless chicken thighs
+    name_fr: cuisses de poulet désossées
+    quantity: 2.5
+    unit_en: pounds
+    unit_fr: livres
+  - name_en: red onion
+    name_fr: oignon rouge
+    quantity: 1/2
+    unit_en: ""
+    unit_fr: ""
+  - name_en: olive oil
+    name_fr: huile d'olive
+    quantity: 3
+    unit_en: tbsp
+    unit_fr: c. à soupe
+  - name_en: plain yogourt
+    name_fr: yogourt nature
+    quantity: 2
+    unit_en: tbsp
+    unit_fr: c. à soupe
+  - name_en: large lemon
+    name_fr: gros citron
+    quantity: 1/2
+    unit_en: ""
+    unit_fr: ""
+  - name_en: thyme
+    name_fr: thym
+    quantity: 1
+    unit_en: tbsp
+    unit_fr: c. à soupe
+  - name_en: garlic powder
+    name_fr: poudre d'ail
+    quantity: 1.5
+    unit_en: tbsp
+    unit_fr: c. à soupe
+  - name_en: smoked paprika
+    name_fr: paprika fumé
+    quantity: 1
+    unit_en: tbsp
+    unit_fr: c. à soupe
+  - name_en: Aleppo pepper
+    name_fr: piment d'Alep
+    quantity: 0.5
+    unit_en: tbsp
+    unit_fr: c. à soupe
+  - name_en: cayenne pepper
+    name_fr: poivre de cayenne
+    quantity: 0.5
+    unit_en: tsp
+    unit_fr: c. à thé
+  - name_en: turmeric
+    name_fr: curcuma
+    quantity: 0.5
+    unit_en: tsp
+    unit_fr: c. à thé
+  - name_en: cumin
+    name_fr: cumin
+    quantity: 0.5
+    unit_en: tsp
+    unit_fr: c. à thé
+  - name_en: cinnamon
+    name_fr: canelle
+    quantity: 0.5
+    unit_en: tsp
+    unit_fr: c. à thé
+  - name_en: cardamom
+    name_fr: cardamome
+    quantity: 0.25
+    unit_en: tsp
+    unit_fr: c. à thé
+  - name_en: nutmeg
+    name_fr: muscade
+    quantity: 0.25
+    unit_en: tsp
+    unit_fr: c. à thé
+  - name_en: salt
+    name_fr: sel
+    quantity: ""
+    unit_en: ""
+    unit_fr: ""
+  - name_en: pepper
+    name_fr: poivre
+    quantity: ""
+    unit_en: ""
+    unit_fr: ""
   categories:
-  - name_en: 
-    name_fr: 
-  - name_en: 
-    name_fr: 
-  - name_en: 
-    name_fr: 
+  - name_en: dinner
+    name_fr: souper
+  - name_en: meat
+    name_fr: viande
+  - name_en: chicken
+    name_fr: poulet
   images:
-  - image_path: o
-    caption_en: F
-    caption_fr: F
-
-
-
----
-title: Chicken Shawarma
-image_path: chicken_shawarma.png
-ingredients: 
-- 2.5 lbs of boneless chicken thighs
-- 1/2 red onion
-- 2-3 tablespoons olive oil
-- 3-4 pinches of salt
-- fresh cracked pepper
-- 2 tbsp of plain yogurt
-- the juice of 1/2 large lemon
-- 1 tbsp thyme
-- 1.5 tbsp garlic powder
-- 1 tbsp smoked paprika
-- 1/2 tbsp Aleppo pepper
-- 1/2 tsp cayenne pepper
-- 1/2 tsp turmeric
-- 1/2 tsp cumin
-- 1/4 tsp cardamom
-- 1/2 tsp cinnamon
-- 1/8 tsp nutmeg
-instructions:
-- Mix all ingredients together.
-- Marinate from 2 hours to 2 days.
-- Remove from the fridge.
-- Preheat the oven to 425*F.
-- Pack the marinated chicken tightly into a bread loaf pan (about 8.5x4.5x2.5).
-- Pop it into the oven for 45-55 mins at 425F.
-- Remove the chicken from the oven, tilt the pan over a glass bowl or container to pour out the excess juices (save the juice to use as broth or to pour over the chicken).
-- Flip the loaf pan onto a cutting board to remove the chicken and cut it into thin slices or strips.
-- Serve it up however way you want - as is, on top of a salad, on a power bowl, whatever! This stays well in the fridge in an airtight lid for 4-5 days.
-tags:
-- meat
-- chicken
-- dinner
-source: 
-- https://www.instagram.com/shredhappens/reel/C2yTnDMuaRk/?hl=en
-
-
-
+  - image_path: chicken_shawarma.png
+    caption_en: Homemade chicken shawarma.
+    caption_fr: Shawarma au poulet fait maison.
