@@ -28,7 +28,7 @@ CREATE TABLE recipes (
     servings INT,
     date_created TIMESTAMP WITHOUT TIME ZONE DEFAULT CURRENT_TIMESTAMP,
     date_updated TIMESTAMP WITHOUT TIME ZONE DEFAULT CURRENT_TIMESTAMP,
-    image_url VARCHAR(255)
+    image_path VARCHAR(255)
 );
 
 -- Function to update the date_updated column
@@ -71,7 +71,7 @@ CREATE TABLE recipe_categories (
 CREATE TABLE recipe_images (
     image_id SERIAL PRIMARY KEY,
     recipe_id INT NOT NULL,
-    image_url VARCHAR(255) NOT NULL,
+    image_path VARCHAR(255) NOT NULL,
     caption_en VARCHAR(255),
     caption_fr VARCHAR(255),
     FOREIGN KEY (recipe_id) REFERENCES recipes(recipe_id) ON DELETE CASCADE
