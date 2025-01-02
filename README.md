@@ -9,4 +9,4 @@ I am using a postgres database to store my recipes as a good excuse to use postg
 * Run migration to create all tables in the database with `pdm migrateup`
 * Connect to the database with `pdm connect`
 
-The basic flow of the app is [here](https://play.d2lang.com/?script=lJCxzoMwDIR3P4UXRkBizPCPvEcIVhIJCL_tUlVV371K1VCWVmKMT_fd5cbI5DSmxSBHHxRg4HQVYoN3QIwuK0F1FdO2-SWNErMV5YvTxqW5VXKh6vq3r-4a2TwgSrArGYyz9QQPACHezmBH2qquX28a0vIFOVq1gxU6DU2inkn-p59dsf7DT0Qx7alZLp_Kt7Lc8f5qc8Dt4wadJ3gGAAD__w%3D%3D&).
+The basic flow of the app is [here](https://play.d2lang.com/?script=rJIxawMxDIV3_wovGXOGgyxHKXTJlNK5U1BsxTY9n11JuRBK_3txuEsz9IZAxyfhp6dPdpHQSsxDpyn6IEodKJ8ZqdNfSutoayeIFO6MqYobQSJgoZOVxuZkBG1Ytdvp3bptePRKaw5QsNMxgUf1rRQjjY_YOhxX7bZcJORhwdKBwAEYHzbNLJ6QP_ulrJZikX_NeoHU_2V4Kn0G15zjR0zoIjSZvKmqVGVsTikPbDZmA-bteIw2Qr9_f3nd7XfZ54VhE2y9fta_jOatb9hqe75Krc2nv69fY97Z3X5HkNRfl9JPaz3zIgQ3wVuY_RMAAP__&).
