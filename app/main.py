@@ -1,5 +1,5 @@
 import os
-from pg8000 import dbapi
+import pg8000.dbapi as dbapi
 from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
@@ -7,6 +7,9 @@ from fastapi.templating import Jinja2Templates
 
 app = FastAPI()
 
+# a more readable style of parameter handling in sql statements.
+# https://github.com/tlocke/pg8000?tab=readme-ov-file#pg8000dbapiparamstyle
+dbapi.paramstyle = "named"
 connection = dbapi.connect(
     host="localhost",
     database=os.environ["DATABASE"],
@@ -19,6 +22,7 @@ app.mount("/static", StaticFiles(directory="./app/static"), name="static")
 templates = Jinja2Templates(directory="./app/templates")
 
 
+# XXX: probably delete this?
 @app.get("/items/{id}", response_class=HTMLResponse)
 async def read_item(request: Request, id: str):
     return templates.TemplateResponse(
@@ -36,20 +40,26 @@ async def index(request: Request):
 
 @app.get("/recipes/{recipe_id}", response_class=HTMLResponse)
 async def read_recipe(request: Request, recipe_id):
+    try:
+        recipe_id = int(recipe_id)
+    except ValueError:
+        return templates.TemplateResponse(request=request, name="404.html")
+
     cursor.execute(
-        "SELECT TITLE, IMAGE_PATH, INGREDIENTS, INSTRUCTIONS, SOURCE FROM RECIPES WHERE ID = %s",
-        (recipe_id,),
+        "SELECT title_en, instructions_en FROM recipes WHERE recipe_id = :recipe_id;",
+        {"recipe_id": recipe_id},
     )
-    [title, image_path, ingredients, instructions, source] = cursor.fetchone()
+    # if there are no rows a 404 "not found" status code is good.
+    if cursor.rowcount == 0:
+        return templates.TemplateResponse(request=request, name="404.html")
+
+    [title_en, instructions_en] = cursor.fetchone()
     return templates.TemplateResponse(
         request=request,
         name="recipe.html",
         context={
-            "id": recipe_id,
-            "title": title,
-            "image_path": image_path,
-            "ingredients": ingredients,
-            "instructions": instructions,
-            "source": source,
+            "recipe_id": recipe_id,
+            "title_en": title_en,
+            "instructions_en": instructions_en,
         },
     )
