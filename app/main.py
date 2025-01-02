@@ -22,14 +22,6 @@ app.mount("/static", StaticFiles(directory="./app/static"), name="static")
 templates = Jinja2Templates(directory="./app/templates")
 
 
-# XXX: probably delete this?
-@app.get("/items/{id}", response_class=HTMLResponse)
-async def read_item(request: Request, id: str):
-    return templates.TemplateResponse(
-        request=request, name="item.html", context={"id": id}
-    )
-
-
 cursor = connection.cursor()
 
 
@@ -46,20 +38,20 @@ async def read_recipe(request: Request, recipe_id):
         return templates.TemplateResponse(request=request, name="404.html")
 
     cursor.execute(
-        "SELECT title_en, instructions_en FROM recipes WHERE recipe_id = :recipe_id;",
+        "SELECT title_en, description_en, instructions_en FROM recipes WHERE recipe_id = :recipe_id;",
         {"recipe_id": recipe_id},
     )
-    # if there are no rows a 404 "not found" status code is good.
     if cursor.rowcount == 0:
         return templates.TemplateResponse(request=request, name="404.html")
 
-    [title_en, instructions_en] = cursor.fetchone()
+    [title_en, description_en, instructions_en] = cursor.fetchone()
     return templates.TemplateResponse(
         request=request,
         name="recipe.html",
         context={
             "recipe_id": recipe_id,
             "title_en": title_en,
+            "description_en": description_en,
             "instructions_en": instructions_en,
         },
     )
