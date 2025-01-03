@@ -37,20 +37,26 @@ async def read_recipe(request: Request, recipe_id):
     except ValueError:
         return templates.TemplateResponse(request=request, name="404.html")
 
+    # Get recipe details
     cursor.execute(
-        "SELECT title_en, description_en, instructions_en FROM recipes WHERE recipe_id = :recipe_id;",
+        """
+        SELECT recipes.title_en, recipe_images.image_path, recipes.description_en, recipes.instructions_en 
+        FROM recipes 
+        JOIN recipe_images ON recipes.recipe_id = recipe_images.recipe_id 
+        WHERE recipes.recipe_id = :recipe_id;""",
         {"recipe_id": recipe_id},
     )
     if cursor.rowcount == 0:
         return templates.TemplateResponse(request=request, name="404.html")
 
-    [title_en, description_en, instructions_en] = cursor.fetchone()
+    [title_en, image_path, description_en, instructions_en] = cursor.fetchone()
     return templates.TemplateResponse(
         request=request,
         name="recipe.html",
         context={
             "recipe_id": recipe_id,
             "title_en": title_en,
+            "image_path": image_path,
             "description_en": description_en,
             "instructions_en": instructions_en,
         },
