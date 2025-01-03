@@ -40,7 +40,7 @@ async def read_recipe(request: Request, recipe_id):
     # Get recipe details
     cursor.execute(
         """
-        SELECT recipes.title_en, recipe_images.image_path, recipes.description_en, ARRAY_AGG(ingredients.name_en), recipes.instructions_en 
+        SELECT recipes.title_en, recipe_images.image_path, recipes.description_en, ARRAY_AGG(ingredients.name_en order by ingredients.name_en), recipes.instructions_en 
         FROM recipes
         JOIN recipe_images ON recipes.recipe_id = recipe_images.recipe_id 
         JOIN recipe_ingredients ON recipes.recipe_id = recipe_ingredients.recipe_id

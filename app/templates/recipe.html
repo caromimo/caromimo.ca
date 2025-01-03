@@ -12,7 +12,10 @@
     <img src="{{ url_for('static', path=image_path)}}" />
     <p>{{description_en}}</p>
     <h2>Ingredients: </h2>
-    <p>{{ingredients_en}}</p>
+    <ul>{% for ingredient in ingredients_en %}
+        <li>{{ ingredient }}</li>
+        {% endfor %}
+    </ul>
     <h2>Instructions: </h2>
     <p>{{instructions_en}}</p>
 </body>
