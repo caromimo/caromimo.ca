@@ -17,7 +17,10 @@
         {% endfor %}
     </ul>
     <h2>Instructions: </h2>
-    <p>{{instructions_en}}</p>
+    <ol>{% for instruction in instructions_en.splitlines() %}
+        <li>{{ instruction }}</li>
+        {% endfor %}
+    </ol>
 </body>
 
 </html>
