@@ -1,27 +1,19 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
 
-<html>
+{% block title %}Recipe Details{% endblock %}
 
-<head>
-    <title>Recipe Details</title>
-    <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
-    <meta charset="utf-8">
-</head>
-
-<body>
-    <h1>{{title_en}}</h1>
-    <img src="{{ url_for('static', path=image_path)}}" />
-    <p>{{description_en}}</p>
-    <h2>Ingredients: </h2>
-    <ul>{% for ingredient in ingredients_en %}
-        <li>{{ ingredient }}</li>
-        {% endfor %}
-    </ul>
-    <h2>Instructions: </h2>
-    <ol>{% for instruction in instructions_en.splitlines() %}
-        <li>{{ instruction }}</li>
-        {% endfor %}
-    </ol>
-</body>
-
-</html>
+{% block content %}
+<h1>{{title_en}}</h1>
+<img src="{{ url_for('static', path=image_path)}}" />
+<p>{{description_en}}</p>
+<h2>Ingredients: </h2>
+<ul>{% for ingredient in ingredients_en %}
+    <li>{{ ingredient }}</li>
+    {% endfor %}
+</ul>
+<h2>Instructions: </h2>
+<ol>{% for instruction in instructions_en.splitlines() %}
+    <li>{{ instruction }}</li>
+    {% endfor %}
+</ol>
+{% endblock %}
