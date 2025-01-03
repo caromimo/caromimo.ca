@@ -9,9 +9,7 @@ import aiosql
 
 app = FastAPI()
 
-# a more readable style of parameter handling in sql statements.
-# https://github.com/tlocke/pg8000?tab=readme-ov-file#pg8000dbapiparamstyle
-dbapi.paramstyle = "named"
+
 connection = dbapi.connect(
     host="localhost",
     database=os.environ["DATABASE"],
