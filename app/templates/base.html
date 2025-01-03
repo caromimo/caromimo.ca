@@ -9,12 +9,15 @@
 </head>
 
 <body>
-    <div id="content">{% block content %}{% endblock %}</div>
-    <div id="footer">
+    <header>
+        <h1>Yummy things</h1>
+    </header>
+    <main>{% block content %}{% endblock %}</main>
+    <footer>
         {% block footer %}
         &copy; Copyright 2025 by Caroline Mimeault.
         {% endblock %}
-    </div>
+    </footer>
 </body>
 
 </html>
