@@ -4,6 +4,8 @@ from fastapi import FastAPI, Request
 from fastapi.responses import HTMLResponse
 from fastapi.staticfiles import StaticFiles
 from fastapi.templating import Jinja2Templates
+import aiosql
+
 
 app = FastAPI()
 
@@ -21,8 +23,7 @@ app.mount("/static", StaticFiles(directory="./app/static"), name="static")
 
 templates = Jinja2Templates(directory="./app/templates")
 
-
-cursor = connection.cursor()
+queries = aiosql.from_path("./app/queries.sql", "pg8000")
 
 
 @app.get("/", response_class=HTMLResponse)
@@ -37,23 +38,8 @@ async def read_recipe(request: Request, recipe_id):
     except ValueError:
         return templates.TemplateResponse(request=request, name="404.html")
 
-    # Get recipe details
-    cursor.execute(
-        """
-        SELECT recipes.title_en, recipe_images.image_path, recipes.description_en, ARRAY_AGG(ingredients.name_en order by ingredients.name_en), recipes.instructions_en 
-        FROM recipes
-        JOIN recipe_images ON recipes.recipe_id = recipe_images.recipe_id 
-        JOIN recipe_ingredients ON recipes.recipe_id = recipe_ingredients.recipe_id
-        JOIN ingredients ON recipe_ingredients.ingredient_id = ingredients.ingredient_id 
-        WHERE recipes.recipe_id = :recipe_id
-        GROUP BY recipes.recipe_id, recipes.title_en, recipe_images.image_path, recipes.description_en, recipes.instructions_en;""",
-        {"recipe_id": recipe_id},
-    )
-    if cursor.rowcount == 0:
-        return templates.TemplateResponse(request=request, name="404.html")
-
     [title_en, image_path, description_en, ingredients_en, instructions_en] = (
-        cursor.fetchone()
+        queries.get_recipe_details(connection, recipe_id=recipe_id)
     )
     return templates.TemplateResponse(
         request=request,

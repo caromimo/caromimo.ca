@@ -5,7 +5,18 @@
 groups = ["default"]
 strategy = ["cross_platform", "inherit_metadata"]
 lock_version = "4.4.1"
-content_hash = "sha256:bad61ce8b02a4ed103831c88b5d54f8a3050115d1f14fc439524051bbf5609bd"
+content_hash = "sha256:70fa53978a91dc1bbdd52db2048a81305d7d2f8dcdddf8105fe4f29c58d53893"
+
+[[package]]
+name = "aiosql"
+version = "13.0"
+requires_python = ">=3.9"
+summary = "Simple SQL in Python"
+groups = ["default"]
+files = [
+    {file = "aiosql-13.0-py3-none-any.whl", hash = "sha256:e58532efb82d7d1b7849c65a169c4c16b2cd7c2c5b9c641a984b85290e097948"},
+    {file = "aiosql-13.0.tar.gz", hash = "sha256:b074b575f818087c45afe819e140beda5026d5f92654e44faf970bd328a5acb5"},
+]
 
 [[package]]
 name = "annotated-types"
