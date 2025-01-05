@@ -4,7 +4,7 @@
 <head>
     {% block head %}
     <link href="{{ url_for('static', path='/styles.css') }}" rel="stylesheet">
-    <title>{% block title %}{% endblock %} - My Webpage</title>
+    <title>{% block title %}{% endblock %} - caromimo.ca</title>
     <meta charset="utf-8">
     {% endblock %}
 </head>
@@ -15,9 +15,7 @@
     </header>
     <main>{% block content %}{% endblock %}</main>
     <footer>
-        {% block footer %}
-        &copy; Copyright 2025 by Caroline Mimeault.
-        {% endblock %}
+        &copy; 2025 Caroline Mimeault
     </footer>
 </body>
 
