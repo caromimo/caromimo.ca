@@ -36,9 +36,14 @@ async def read_recipe(request: Request, recipe_id):
     except ValueError:
         return templates.TemplateResponse(request=request, name="404.html")
 
-    [title_en, image_path, description_en, ingredients_en, instructions_en] = (
-        queries.get_recipe_details(connection, recipe_id=recipe_id)
-    )
+    [
+        title_en,
+        image_path,
+        description_en,
+        source_en,
+        ingredients_en,
+        instructions_en,
+    ] = queries.get_recipe_details(connection, recipe_id=recipe_id)
     return templates.TemplateResponse(
         request=request,
         name="recipe.html",
@@ -46,6 +51,7 @@ async def read_recipe(request: Request, recipe_id):
             "recipe_id": recipe_id,
             "title_en": title_en,
             "image_path": image_path,
+            "source_en": source_en,
             "description_en": description_en,
             "ingredients_en": ingredients_en,
             "instructions_en": instructions_en,

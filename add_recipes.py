@@ -28,8 +28,8 @@ def insert_recipe_data(recipe_data):
         # Insert recipe
         cur.execute(
             """
-            INSERT INTO recipes (title_en, title_fr, description_en, description_fr, instructions_en, instructions_fr, prep_time_minutes, cook_time_minutes, servings)
-            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s)
+            INSERT INTO recipes (title_en, title_fr, description_en, description_fr, source_en, source_fr,instructions_en, instructions_fr, prep_time_minutes, cook_time_minutes, servings)
+            VALUES (%s, %s, %s, %s, %s, %s, %s, %s, %s, %s, %s)
             RETURNING recipe_id;
             """,
             (
@@ -37,6 +37,8 @@ def insert_recipe_data(recipe_data):
                 recipe["title_fr"],
                 recipe["description_en"],
                 recipe["description_fr"],
+                recipe["source_en"],
+                recipe["source_fr"],
                 recipe["instructions_en"],
                 recipe["instructions_fr"],
                 recipe["prep_time_minutes"],
