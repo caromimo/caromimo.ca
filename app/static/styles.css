@@ -17,5 +17,9 @@ main {
 
 footer {
     min-height: 5em;
-    align-content: center;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
 }
