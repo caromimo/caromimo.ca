@@ -298,3 +298,93 @@ recipes:
   - image_path: chicken_shawarma.png
     caption_en: Homemade chicken shawarma.
     caption_fr: Shawarma au poulet fait maison.
+- title_en: Baked asian-style rice
+  title_fr: Riz au four à l'asiatique
+  description_en: A recipe from my dear sister that evolved over time. A delicious confort meal.
+  description_fr: Une recette de ma chère soeur qui a évolué au fil du temps. Un délicieux repas réconfortant.
+  source_en: ""
+  source_fr: ""
+  servings: 8
+  ingredients: 
+  - name_en: brown sushi rice
+    name_fr: riz à sushi brun
+    quantity: 2
+    unit_en: cups
+    unit_fr: tasses
+  - name_en: water
+    name_fr: eau
+    quantity: 3.5
+    unit_en: cups
+    unit_fr: tasses
+  - name_en: soya sauce
+    name_fr: sauce soya
+    quantity: 0.25
+    unit_en: cup
+    unit_fr: tasse
+  - name_en: Better than Bouillon
+    name_fr: Better than Bouillon
+    quantity: 1
+    unit_en: tbsp
+    unit_fr: c. à soupe
+  - name_en: onion
+    name_fr: oignon
+    quantity: 1
+    unit_en: ""
+    unit_fr: ""
+  - name_en: Shitake mushrooms
+    name_fr: champignons Shitaké
+    quantity: 2
+    unit_en: cups
+    unit_fr: tasse
+  - name_en: firm tofu
+    name_fr: tofu ferme
+    quantity: 400
+    unit_en: g
+    unit_fr: g
+  - name_en: olive oil
+    name_fr: huile d'olive
+    quantity: 0.3
+    unit_en: cup
+    unit_fr: tasse
+  - name_en: fresh ginger
+    name_fr: gingembre frais
+    quantity: 2
+    unit_en: tbsp
+    unit_fr: c. à soupe
+  - name_en: crushed garlic cloves
+    name_fr: bulbes d'ail écrasés
+    quantity: 4
+    unit_en: ""
+    unit_fr: ""
+  - name_en: bok choy
+    name_fr: bok choy
+    quantity: 4
+    unit_en: cups
+    unit_fr: tasses
+  - name_en: green onions
+    name_fr: oignons verts
+    quantity: 4
+    unit_en: ""
+    unit_fr: ""
+  images:
+  - image_path: rice.png
+    caption_en: Homemade baked asian-style rice.
+    caption_fr: Riz au four style asiatique.
+  instructions_en: |
+    Preheat oven to 350°F
+    Cut vegetables and tofu into cubes.
+    Add all ingredients, except bok choy and green onions, to the pot.
+    Place in the oven uncovered.
+    Check after 2 hours of cooking. If all the water is absorbed, add bok choy and return to the oven for 10 minutes. Cover if necessary.
+    Remove from the oven, add green onions.
+    Serve hot.
+  instructions_fr: |
+    Préchauffer le four à 350°F
+    Couper les légumes et le tofu en cubes.
+    Mettre tous les ingrédients, à l'exception du bok choy et des oignons verts, dans la casserole.
+    Mettre au four à découvert. 
+    Vérifier après 2 heures de cuisson. Si l'eau est toute absorbée, rajouter le bok choy et remettre au four pour 10 min. Couvrir si nécessaire.
+    Sortir du four, ajouter les oignons verts. 
+    Servir chaud.
+  prep_time_minutes: 15
+  cook_time_minutes: 150
