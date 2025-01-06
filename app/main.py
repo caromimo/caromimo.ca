@@ -41,9 +41,10 @@ async def read_recipe(request: Request, recipe_id):
         image_path,
         description_en,
         source_en,
-        ingredients_en,
+        ingredients,
         instructions_en,
     ] = queries.get_recipe_details(connection, recipe_id=recipe_id)
+    print(instructions_en)
     return templates.TemplateResponse(
         request=request,
         name="recipe.html",
@@ -53,7 +54,7 @@ async def read_recipe(request: Request, recipe_id):
             "image_path": image_path,
             "source_en": source_en,
             "description_en": description_en,
-            "ingredients_en": ingredients_en,
+            "ingredients_en": ingredients,
             "instructions_en": instructions_en,
         },
     )
