@@ -3,8 +3,9 @@
 {% block title %}Recipe Details{% endblock %}
 
 {% block content %}
-<h2>{{title_en}}</h2>
+
 <img src="{{ url_for('static', path=image_path)}}" />
+<h1>{{title_en}}</h1>
 <p>{{description_en}}</p>
 <h2>Ingredients: </h2>
 <ul>{% for ingredient in ingredients_en %}
