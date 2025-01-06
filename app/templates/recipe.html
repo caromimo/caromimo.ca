@@ -10,7 +10,7 @@
 <a href="{{source_en}}">{{title_en}}</a>
 <h2>Ingredients: </h2>
 <ul>{% for ingredient in ingredients_en %}
-    <li>{{ ingredient }}</li>
+    <li>{{ ingredient["quantity"]}} {{ ingredient["unit"] }} {{ ingredient["ingredient"] }}</li>
     {% endfor %}
 </ul>
 <h2>Instructions: </h2>
