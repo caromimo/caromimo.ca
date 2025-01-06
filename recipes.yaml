@@ -366,6 +366,13 @@ recipes:
     quantity: 4
     unit_en: ""
     unit_fr: ""
+  categories:
+  - name_en: dinner
+    name_fr: souper
+  - name_en: vegetarian
+    name_fr: végétarien
+  - name_en: tofu
+    name_fr: tofu
   images:
   - image_path: rice.png
     caption_en: Homemade baked asian-style rice.
