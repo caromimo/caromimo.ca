@@ -300,8 +300,8 @@ recipes:
     caption_fr: Shawarma au poulet fait maison.
 - title_en: Baked asian-style rice
   title_fr: Riz au four à l'asiatique
-  description_en: A recipe from my dear sister that evolved over time. A delicious confort meal.
-  description_fr: Une recette de ma chère soeur qui a évolué au fil du temps. Un délicieux repas réconfortant.
+  description_en: A recipe from my dear sister that evolved over time into an asian-inspired version. A delicious confort meal.
+  description_fr: Une recette de ma chère soeur qui a évolué au fil du temps en une version inspirée de la cuisine asiatique. Un délicieux repas réconfortant.
   source_en: ""
   source_fr: ""
   servings: 8
@@ -343,9 +343,14 @@ recipes:
     unit_fr: g
   - name_en: olive oil
     name_fr: huile d'olive
-    quantity: 0.3
+    quantity: 0.25
     unit_en: cup
     unit_fr: tasse
+  - name_en: toasted sesame oil
+    name_fr: huile de sesame grillée
+    quantity: 2
+    unit_en: tbsp
+    unit_fr: c. à soupe
   - name_en: fresh ginger
     name_fr: gingembre frais
     quantity: 2
