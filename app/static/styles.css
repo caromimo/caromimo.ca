@@ -25,6 +25,7 @@ footer {
 
 h1 {
     text-align: center;
+    font-size: 5em;
 }
 
 .red-hat-display-text> {
@@ -32,4 +33,9 @@ h1 {
     font-optical-sizing: auto;
     font-weight: 300;
     font-style: normal;
+}
+
+.miam {
+    width: 100%;
+    z-index: 0;
 }
