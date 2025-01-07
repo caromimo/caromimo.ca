@@ -457,3 +457,90 @@ recipes:
     Mélanger tous les ingrédients.
     Si désiré, passer au blender.
     Servir et déguster.
+- title_en: Soupe au Nad
+  title_fr: Soupe au Nad
+  description_en: A delicious tomato and quinoa soup that evolved from a recipe my dear friend Nadia used to make when we lived together. Over the years, some of the ingredients have changed and the recipe has been renamed “Soupe au Nad” (Nadia Soup rather than Nadia's Soup) because of my husband's beginner French.
+  description_fr: Une délicieuse soupe aux tomates et au quinoa qui a évolué à partir d'une recette que ma chère amie Nadia préparait lorsque nous vivions ensemble. Au fil des ans, certains ingrédients ont changé et la recette a été renommée « Soupe au Nad » (traduction de Nadia Soup plutôt que Nadia's Soup) en raison du français débutant de mon mari.
+  source_en: "My dear friend Nadia"
+  source_fr: "Ma chère amie Nadia"
+  prep_time_minutes: 15
+  cook_time_minutes: 30
+  servings: 6
+  ingredients: 
+  - name_en: olive oil
+    name_fr: huile d'olive
+    quantity: 3
+    unit_en: tbsp
+    unit_fr: c. à soupe
+  - name_en: onion
+    name_fr: ognion
+    quantity: 1
+    unit_en: ""
+    unit_fr: ""
+  - name_en: garlic cloves
+    name_fr: gousses d'ail
+    quantity: 2
+    unit_en: ""
+    unit_fr: ""
+  - name_en: large can of diced tomatoes
+    name_fr: grande canne de tomates en dés
+    quantity: 1
+    unit_en: ""
+    unit_fr: ""
+  - name_en: vegetable broth
+    name_fr: bouillon de légumes
+    quantity: 6
+    unit_en: cups
+    unit_fr: tasses
+  - name_en: red lentils
+    name_fr: lentilles rouges
+    quantity: 1
+    unit_en: cup
+    unit_fr: tasse
+  - name_en: quinoa
+    name_fr: quinoa
+    quantity: 0.5
+    unit_en: cup
+    unit_fr: tasse
+  - name_en: salt
+    name_fr: sel
+    quantity: ""
+    unit_en: ""
+    unit_fr: ""
+  - name_en: fresh spinach
+    name_fr: épinards frais
+    quantity: 4
+    unit_en: cups
+    unit_fr: tasses
+  - name_en: pepper
+    name_fr: poivre
+    quantity: ""
+    unit_en: ""
+    unit_fr: ""
+  categories:
+  - name_en: soup
+    name_fr: soupe
+  - name_en: vegetarian
+    name_fr: végétarien 
+  images:
+  - image_path: soup_tomato_quinoa.png
+    caption_en: Tomato and quinoa soup.
+    caption_fr: Soupe aux tomates et au quinoa.
+  instructions_en: |
+    Brown the garlic and onion in olive oil.
+    Add the tomatoes and continue cooking for 2 minutes.
+    Add the broth, lentils, and quinoa.
+    Simmer over low heat for about 25 minutes.
+    Add the fresh spinach.
+    Continue cooking for about 3 minutes.
+    Adjust the seasoning.
+    Serve and enjoy.
+  instructions_fr: |
+    Faire rissoler l'ail et l'ognion dans l'huile d'olive.
+    Ajouter les tomates et poursuivre la cuisson 2 minutes.
+    Ajouter le bouillon, les lentilles, et le quinoa.
+    Laisser mijoter à faible bouillon pour environ 25 minutes.
+    Ajouter les épinards frais.
+    Continuer la cuisson environ 3 minutes.
+    Ajuster l'assaisonnement.
+    Servir et déguster.
