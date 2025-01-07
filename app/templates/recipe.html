@@ -5,18 +5,28 @@
 {% block content %}
 
 <img class="miam" src="{{ url_for('static', path=image_path)}}" />
+
 <h1>{{title_en}}</h1>
-<p>{{description_en}}</p>
-<h2>Ingredients: </h2>
-<ul>{% for ingredient in ingredients_en %}
-    <li>{{ ingredient["quantity"]}} {{ ingredient["unit"] }} {{ ingredient["ingredient"] }}</li>
-    {% endfor %}
-</ul>
-<h2>Instructions: </h2>
-<ol>{% for instruction in instructions_en.splitlines() %}
-    <li>{{ instruction }}</li>
-    {% endfor %}
-</ol>
-<h2>Credits:</h2>
-<a href="{{source_en}}">{{title_en}}</a>
+
+
+<div class="all-details">
+
+    <p>{{description_en}}</p>
+
+    <h2>Ingredients: </h2>
+    <ul>{% for ingredient in ingredients_en %}
+        <li>{{ ingredient["quantity"]}} {{ ingredient["unit"] }} {{ ingredient["ingredient"] }}</li>
+        {% endfor %}
+    </ul>
+
+    <h2>Instructions: </h2>
+    <ol>{% for instruction in instructions_en.splitlines() %}
+        <li>{{ instruction }}</li>
+        {% endfor %}
+    </ol>
+
+    <h2>Credits:</h2>
+    <a href="{{source_en}}">{{title_en}}</a>
+
+</div>
 {% endblock %}
