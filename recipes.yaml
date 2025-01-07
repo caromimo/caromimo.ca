@@ -400,3 +400,60 @@ recipes:
     Servir chaud.
   prep_time_minutes: 15
   cook_time_minutes: 150
+- title_en: Budwig cream
+  title_fr: Crème Budwig
+  description_en: The famous and delicious Budwig cream originally created by Dr.Kousmine. My dad made this for breakfast for years at home, and it continues to hold a sweat spot in my heart. Not sure if this is the original recipe but it is how my dad has been making it, and how I love it.
+  description_fr: La célèbre et délicieuse crème Budwig, créée à l'origine par le Dr Kousmine. Mon père la préparait pour le petit-déjeuner à la maison depuis des années, et elle continue de me tenir à cœur. Je ne sais pas si c'est la recette originale, mais c'est comme ça que mon père la prépare et comme je l'adore.
+  source_en: "Dr. Kousmine"
+  source_fr: "Dr. Kousmine"
+  prep_time_minutes: 10
+  cook_time_minutes: 0
+  servings: 1
+  ingredients: 
+  - name_en: flax oil
+    name_fr: huie de lin
+    quantity: 2
+    unit_en: tbsp
+    unit_fr: c. à soupe
+  - name_en: cottage cheese
+    name_fr: fromage cottage
+    quantity: 4
+    unit_en: tbsp
+    unit_fr: c. à soupe
+  - name_en: lemon
+    name_fr: citron
+    quantity: 0.5
+    unit_en: ""
+    unit_fr: ""
+  - name_en: seeds (flax, sesame, sunflower) or nuts (almonds, hazelnuts) freshly ground
+    name_fr: graines (lin, sesame, tournesol) ou noix (amandes, noisettes) fraichement moulues
+    quantity: 2
+    unit_en: tbsp
+    unit_fr: c. à soupe
+  - name_en: mix complete raw cereals (oats, barley, rice, buckwheat) freshly ground
+    name_fr: mélange de céréales crues complètes (avoine, orge, riz, sarrazin) fraichement moulues
+    quantity: 2
+    unit_en: tbsp
+    unit_fr: c. à soupe
+  - name_en: ripe banana
+    name_fr: banane mûre
+    quantity: 1
+    unit_en: ""
+    unit_fr: ""
+  categories:
+  - name_en: breakfast
+    name_fr: déjeuner
+  - name_en: vegetarian
+    name_fr: végétarien
+  images:
+  - image_path: budwig.png
+    caption_en: Budwig cream in a bowl.
+    caption_fr: Crème Budwig dans un bol.
+  instructions_en: |
+    Mix all ingredients.
+    If desired, blend.
+    Serve and enjoy.
+  instructions_fr: |
+    Mélanger tous les ingrédients.
+    Si désiré, passer au blender.
+    Servir et déguster.
