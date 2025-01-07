@@ -21,12 +21,13 @@ footer {
     min-height: 5em;
     text-align: center;
     font-family: 'Red Hat Display';
+    margin: 5em 0 5em 0;
 }
 
 h1 {
     text-align: left;
     font-size: 8em;
-    margin: 0 0.2em 0 0.2em;
+    margin: 0.5em 0.2em 0.5em 0.2em;
     line-height: 1em;
 }
 
