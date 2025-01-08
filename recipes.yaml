@@ -459,8 +459,8 @@ recipes:
     Servir et déguster.
 - title_en: Soupe au Nad
   title_fr: Soupe au Nad
-  description_en: A delicious tomato and quinoa soup that evolved from a recipe my dear friend Nadia used to make when we lived together. Over the years, some of the ingredients have changed and the recipe has been renamed “Soupe au Nad” (Nadia Soup rather than Nadia's Soup) because of my husband's beginner French.
-  description_fr: Une délicieuse soupe aux tomates et au quinoa qui a évolué à partir d'une recette que ma chère amie Nadia préparait lorsque nous vivions ensemble. Au fil des ans, certains ingrédients ont changé et la recette a été renommée « Soupe au Nad » (traduction de Nadia Soup plutôt que Nadia's Soup) en raison du français débutant de mon mari.
+  description_en: A delicious tomato, lentils, and quinoa soup that evolved from a recipe my dear friend Nadia used to make when we lived together. Over the years, some of the ingredients have changed and the recipe has been renamed “Soupe au Nad” (Nadia Soup rather than Nadia's Soup) because of my husband's beginner French.
+  description_fr: Une délicieuse soupe aux tomates, lentilles et au quinoa qui a évolué à partir d'une recette que ma chère amie Nadia préparait lorsque nous vivions ensemble. Au fil des ans, certains ingrédients ont changé et la recette a été renommée « Soupe au Nad » (traduction de Nadia Soup plutôt que Nadia's Soup) en raison du français débutant de mon mari.
   source_en: "My dear friend Nadia"
   source_fr: "Ma chère amie Nadia"
   prep_time_minutes: 15
@@ -502,16 +502,21 @@ recipes:
     quantity: 0.5
     unit_en: cup
     unit_fr: tasse
-  - name_en: salt
-    name_fr: sel
-    quantity: ""
-    unit_en: ""
-    unit_fr: ""
   - name_en: fresh spinach
     name_fr: épinards frais
     quantity: 4
     unit_en: cups
     unit_fr: tasses
+  - name_en: thyme
+    name_fr: thym
+    quantity: 2
+    unit_en: tsp
+    unit_fr: c. à thé
+  - name_en: salt
+    name_fr: sel
+    quantity: ""
+    unit_en: ""
+    unit_fr: ""
   - name_en: pepper
     name_fr: poivre
     quantity: ""
@@ -524,8 +529,8 @@ recipes:
     name_fr: végétarien 
   images:
   - image_path: soup_tomato_quinoa.png
-    caption_en: Tomato and quinoa soup.
-    caption_fr: Soupe aux tomates et au quinoa.
+    caption_en: Tomato, lentils and quinoa soup.
+    caption_fr: Soupe aux tomates, lentilles et au quinoa.
   instructions_en: |
     Brown the garlic and onion in olive oil.
     Add the tomatoes and continue cooking for 2 minutes.
