@@ -30,3 +30,8 @@ GROUP BY
     recipes.description_en,
     recipes.source_en,
     recipes.instructions_en;
+
+
+-- name: get_ids_and_titles_of_recipes()
+-- Get all the recipe ids and titles
+SELECT recipe_id, title_en from recipes;

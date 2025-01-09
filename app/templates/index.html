@@ -4,18 +4,12 @@
 
 {% block content %}
 <h2>List of recipes.</h2>
-<a href="/recipes/1">
-    <p>Braised Pork with Sauerkraut and Apples</p>
-</a>
-<a href="/recipes/2">
-    <p>Overnight Focaccia</p>
-</a>
-<a href="/recipes/3">
-    <p>Chicken Shawarma</p>
-</a>
-</a>
-<a href="/recipes/4">
-    <p>Baked asian-style rice</p>
-</a>
+
+<ul>{% for row in ids_and_titles %}
+    <a href="{{ url_for('read_recipe', recipe_id=row[0] )}}">
+        <li>{{ row[1] }}</li>
+    </a>
+    {% endfor %}
+</ul>
 
 {% endblock %}

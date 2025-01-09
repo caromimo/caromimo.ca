@@ -26,7 +26,15 @@ queries = aiosql.from_path("./app/queries.sql", "pg8000")
 
 @app.get("/", response_class=HTMLResponse)
 async def index(request: Request):
-    return templates.TemplateResponse(request=request, name="index.html")
+    ids_and_titles = queries.get_ids_and_titles_of_recipes(connection)
+    print(ids_and_titles)
+    return templates.TemplateResponse(
+        request=request,
+        name="index.html",
+        context={
+            "ids_and_titles": ids_and_titles,
+        },
+    )
 
 
 @app.get("/recipes/{recipe_id}", response_class=HTMLResponse)
