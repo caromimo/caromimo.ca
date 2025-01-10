@@ -2,6 +2,7 @@
 -- Get all the details for a recipe
 SELECT
     recipes.title_en,
+    recipes.slug_en,
     recipe_images.image_path,
     recipes.description_en,
     recipes.source_en,
@@ -25,6 +26,7 @@ WHERE
     recipes.recipe_id = :recipe_id
 GROUP BY
     recipes.title_en,
+    recipes.slug_en,
     recipes.recipe_id,
     recipe_images.image_path,
     recipes.description_en,

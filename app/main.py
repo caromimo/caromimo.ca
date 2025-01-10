@@ -46,6 +46,7 @@ async def read_recipe(request: Request, recipe_id):
 
     [
         title_en,
+        slug_en,
         image_path,
         description_en,
         source_en,
@@ -58,6 +59,7 @@ async def read_recipe(request: Request, recipe_id):
         name="recipe.html",
         context={
             "recipe_id": recipe_id,
+            "slug_en": slug_en,
             "title_en": title_en,
             "image_path": image_path,
             "source_en": source_en,

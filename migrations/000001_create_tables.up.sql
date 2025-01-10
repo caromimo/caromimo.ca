@@ -17,6 +17,8 @@ CREATE TABLE recipes (
     recipe_id SERIAL PRIMARY KEY,
     title_en VARCHAR(255) NOT NULL,
     title_fr VARCHAR(255) NOT NULL,
+    slug_en VARCHAR(255) UNIQUE NOT NULL,
+    slug_fr VARCHAR(255) UNIQUE NOT NULL,
     description_en TEXT,
     description_fr TEXT,
     source_en TEXT,
