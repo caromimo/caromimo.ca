@@ -10,6 +10,7 @@ dependencies = [
     "psycopg2>=2.9.10",
     "PyYAML>=6.0.2",
     "aiosql>=13.0",
+    "python-slugify>=8.0.4",
 ]
 requires-python = "==3.13.*"
 readme = "README.md"
@@ -30,3 +31,4 @@ migrateup = { shell = "migrate -database $DATABASE_URL -path migrations up" }
 migratedown = { shell = "migrate -database $DATABASE_URL -path migrations down 1" }
 server = "uvicorn app.main:app --reload --host 0.0.0.0 --port 8000"
 recipes = "add_recipes.py"
+repl = "python"
