@@ -561,3 +561,108 @@ recipes:
     Continuer la cuisson environ 3 minutes.
     Ajuster l'assaisonnement.
     Servir et déguster.
+- title_en: Jerk Chicken and sweet potato salad 
+  title_fr: Salade de poulet jerk et de patates douces
+  slug_en: jerk-chicken-and-sweet-potato-salad
+  slug_fr: salade-de-poulet-jerk-et-de-patates-douces
+  description_en: A surprisingly good and healthy recipe from my husband who teaked it through the years based on a restaurant where he used to go regularly.
+  description_fr: Une recette étonnamment bonne et saine de mon mari qui l'a préparée au fil des ans en s'inspirant d'un restaurant où il allait régulièrement.
+  source_en: ""
+  source_fr: ""
+  instructions_en: |
+    Set oven to 400°F.
+    Cut sweet potatoes into bite-sized pieces. Toss with avocado oil.
+    Roast sweet potatoes in oven for 30-40 minutes.
+    While potatoes are roasting, pull apart the cooked chicken.
+    In a large bowl, add dressing ingredients (lime juice, lime zest, olive oil, jerk sauce, garlic, chili powder, cumin, and salt).
+    Toss to combine.
+    Once potatoes are cooled, add to large bowl with dressing.
+    Add shredded chicken, green onions, and fresh cilantro.
+    Toss with all remaining ingredients.
+    Toss to combine.
+    Enjoy.
+  instructions_fr: |
+    Réglez le four à 400°F.
+    Coupez les patates douces en morceaux de la taille d'une bouchée. Mélangez avec l'huile d'avocat. 
+    Faites rôtir les patates douces au four pendant 30 à 40 minutes.
+    Pendant que les pommes de terre rôtissent, épluchez le poulet cuit.
+    Dans un grand bol, ajouter les ingrédients pour la vinaigrette (jus de lime, zeste de lime, huile d'olive, jerk sauce, ail, poudre de chili, cumin et sel).
+    Mélangez.
+    Une fois les pommes de terre refroidies, ajoutez-les au grand bol contenant la vinaigrette.
+    Ajouter le poulet éffiloché, les ognions verts et la coriandre fraîche. 
+    Mélanger avec tous les autres ingrédients.
+    Mélangez.
+    Bon appétit.
+  prep_time_minutes: 15
+  cook_time_minutes: 45
+  servings: 4
+  ingredients: 
+  - name_en: limes
+    name_fr: limes
+    quantity: 4
+    unit_en: ""
+    unit_fr: ""
+  - name_en: olive oil
+    name_fr: huile d'olive
+    quantity: 0.33
+    unit_en: cup
+    unit_fr: tasse
+  - name_en: jerk sauce
+    name_fr: sauce jerk
+    quantity: 0.33
+    unit_en: cup
+    unit_fr: tasse
+  - name_en: garlic cloves
+    name_fr: bulbes d'ail
+    quantity: 3
+    unit_en: ""
+    unit_fr: ""
+  - name_en: chili powder
+    name_fr: poudre de chili
+    quantity: 2
+    unit_en: tsp
+    unit_fr: c. à thé
+  - name_en: cumin
+    name_fr: cumin
+    quantity: 0.5
+    unit_en: tsp
+    unit_fr: c. à thé
+  - name_en: salt
+    name_fr: sel
+    quantity: 0.5
+    unit_en: tsp
+    unit_fr: c. à thé
+  - name_en: fresh cilantro
+    name_fr: coriandre fraîche
+    quantity: 0.25
+    unit_en: cup
+    unit_fr: tasse
+  - name_en: sweet potatoes
+    name_fr: patates douces
+    quantity: 3
+    unit_en: pounds
+    unit_fr: livres
+  - name_en: avocado oil
+    name_fr: huile d'avocat
+    quantity: 2
+    unit_en: tbsp
+    unit_fr: c. à soupe
+  - name_en: green onions
+    name_fr: ognions verts
+    quantity: 4
+    unit_en: ""
+    unit_fr: ""
+  - name_en: roasted chicken
+    name_fr: poulet rôti
+    quantity: 1
+    unit_en: ""
+    unit_fr: ""
+  categories:
+  - name_en: salad
+    name_fr: salade
+  - name_en: chicken
+    name_fr: poulet
+  images:
+  - image_path: "jerk-chicken-and-sweet-potato-salad.png"
+    caption_en: Delicious jerk chicken salad.
+    caption_fr: Délicieuse salade de poulet jerk.
