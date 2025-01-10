@@ -1,6 +1,8 @@
 recipes:
 - title_en: Braised Pork with Sauerkraut and Apples
   title_fr: Porc braisé avec choucroute et pommes
+  slug_en: braised-pork-with-sauerkraut-and-apples
+  slug_fr: porc-braise-avec-choucroute-et-pommes
   description_en: Rapidly became a classic and favorite in our house.
   description_fr: C'est rapidement devenu un classique et de nos plats favoris à la maison.
   source_en: "https://www.instagram.com/reel/DCFjmkgOPyy/"
@@ -79,6 +81,8 @@ recipes:
     caption_fr: Porc braisé avec choucroute et pommes
 - title_en: Overnight Focaccia
   title_fr: Focaccia
+  slug_en: overnight-focaccia
+  slug_fr: focaccia
   description_en: Fluffy and irresistable. 
   description_fr: Moelleuse et irrésistible
   source_en: "https://www.instagram.com/reel/CstmeLIICOl/"
@@ -174,6 +178,8 @@ recipes:
     caption_fr: Focaccia fraîche faite maison
 - title_en: Chicken Shawarma
   title_fr: Shawarma au poulet
+  slug_en: chicken-shawarma
+  slug_fr: shawarma-au-poulet
   description_en: Easy, delicious, and healthy.
   description_fr: Facile, délicieux et sain.
   source_en: "https://www.instagram.com/shredhappens/reel/C2yTnDMuaRk/?hl=en"
@@ -300,6 +306,8 @@ recipes:
     caption_fr: Shawarma au poulet fait maison.
 - title_en: Baked asian-style rice
   title_fr: Riz au four à l'asiatique
+  slug_en: baked-asian-style-rice
+  slug_fr: riz-au-four-a-l-asiatique
   description_en: A recipe from my dear sister that evolved over time into an asian-inspired version. A delicious confort meal.
   description_fr: Une recette de ma chère soeur qui a évolué au fil du temps en une version inspirée de la cuisine asiatique. Un délicieux repas réconfortant.
   source_en: ""
@@ -402,6 +410,8 @@ recipes:
   cook_time_minutes: 150
 - title_en: Budwig cream
   title_fr: Crème Budwig
+  slug_en: budwig-cream
+  slug_fr: creme-budwig
   description_en: The famous and delicious Budwig cream originally created by Dr.Kousmine. My dad made this for breakfast for years at home, and it continues to hold a sweat spot in my heart. Not sure if this is the original recipe but it is how my dad has been making it, and how I love it.
   description_fr: La célèbre et délicieuse crème Budwig, créée à l'origine par le Dr Kousmine. Mon père la préparait pour le petit-déjeuner à la maison depuis des années, et elle continue de me tenir à cœur. Je ne sais pas si c'est la recette originale, mais c'est comme ça que mon père la prépare et comme je l'adore.
   source_en: "Dr. Kousmine"
@@ -457,8 +467,10 @@ recipes:
     Mélanger tous les ingrédients.
     Si désiré, passer au blender.
     Servir et déguster.
-- title_en: Soupe au Nad
+- title_en: Soup au Nad
   title_fr: Soupe au Nad
+  slug_en: soup-au-nad
+  slug_fr: soupe-au-nad
   description_en: A delicious tomato, lentils, and quinoa soup that evolved from a recipe my dear friend Nadia used to make when we lived together. Over the years, some of the ingredients have changed and the recipe has been renamed “Soupe au Nad” (Nadia Soup rather than Nadia's Soup) because of my husband's beginner French.
   description_fr: Une délicieuse soupe aux tomates, lentilles et au quinoa qui a évolué à partir d'une recette que ma chère amie Nadia préparait lorsque nous vivions ensemble. Au fil des ans, certains ingrédients ont changé et la recette a été renommée « Soupe au Nad » (traduction de Nadia Soup plutôt que Nadia's Soup) en raison du français débutant de mon mari.
   source_en: "My dear friend Nadia"
