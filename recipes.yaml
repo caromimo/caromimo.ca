@@ -76,7 +76,7 @@ recipes:
   - name_en: pork
     name_fr: porc
   images:
-  - image_path: braised_pork.png
+  - image_path: braised-pork-with-sauerkraut-and-apples.png
     caption_en: Braised pork with sauerkraut and apples
     caption_fr: Porc braisé avec choucroute et pommes
 - title_en: Overnight Focaccia
@@ -173,7 +173,7 @@ recipes:
   - name_en: side dish
     name_fr: accompagnement 
   images:
-  - image_path: overnight_focaccia.png
+  - image_path: overnight-focaccia.png
     caption_en: Fresh homemade focaccia
     caption_fr: Focaccia fraîche faite maison
 - title_en: Chicken Shawarma
@@ -301,7 +301,7 @@ recipes:
   - name_en: chicken
     name_fr: poulet
   images:
-  - image_path: chicken_shawarma.png
+  - image_path: chicken-shawarma.png
     caption_en: Homemade chicken shawarma.
     caption_fr: Shawarma au poulet fait maison.
 - title_en: Baked asian-style rice
@@ -387,7 +387,7 @@ recipes:
   - name_en: tofu
     name_fr: tofu
   images:
-  - image_path: rice.png
+  - image_path: baked-asian-style-rice.png
     caption_en: Homemade baked asian-style rice.
     caption_fr: Riz au four style asiatique.
   instructions_en: |
@@ -456,7 +456,7 @@ recipes:
   - name_en: vegetarian
     name_fr: végétarien
   images:
-  - image_path: budwig.png
+  - image_path: budwig-cream.png
     caption_en: Budwig cream in a bowl.
     caption_fr: Crème Budwig dans un bol.
   instructions_en: |
@@ -540,7 +540,7 @@ recipes:
   - name_en: vegetarian
     name_fr: végétarien 
   images:
-  - image_path: soup_tomato_quinoa.png
+  - image_path: soup-au-nad.png
     caption_en: Tomato, lentils and quinoa soup.
     caption_fr: Soupe aux tomates, lentilles et au quinoa.
   instructions_en: |
