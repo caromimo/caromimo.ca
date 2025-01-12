@@ -304,7 +304,7 @@ recipes:
   - image_path: chicken-shawarma.png
     caption_en: Homemade chicken shawarma.
     caption_fr: Shawarma au poulet fait maison.
-- title_en: Baked asian-style rice
+- title_en: Baked Asian-Style Rice
   title_fr: Riz au four à l'asiatique
   slug_en: baked-asian-style-rice
   slug_fr: riz-au-four-a-l-asiatique
@@ -408,7 +408,7 @@ recipes:
     Servir chaud.
   prep_time_minutes: 15
   cook_time_minutes: 150
-- title_en: Budwig cream
+- title_en: Budwig Cream
   title_fr: Crème Budwig
   slug_en: budwig-cream
   slug_fr: creme-budwig
@@ -561,7 +561,7 @@ recipes:
     Continuer la cuisson environ 3 minutes.
     Ajuster l'assaisonnement.
     Servir et déguster.
-- title_en: Jerk Chicken and sweet potato salad 
+- title_en: Jerk Chicken and Sweet Potato Salad 
   title_fr: Salade de poulet jerk et de patates douces
   slug_en: jerk-chicken-and-sweet-potato-salad
   slug_fr: salade-de-poulet-jerk-et-de-patates-douces
