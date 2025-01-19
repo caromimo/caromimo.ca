@@ -666,3 +666,94 @@ recipes:
   - image_path: "jerk-chicken-and-sweet-potato-salad.png"
     caption_en: Delicious jerk chicken salad.
     caption_fr: Délicieuse salade de poulet jerk.
+- title_en: Baked tomatoes
+  title_fr: Tomates cuites au four
+  slug_en: baked-tomatoes
+  slug_fr: tomates-cuites-au-four
+  description_en: This delicious appetizer will surprise you with its deep and intense flavors. Serve it with crackers and your favorite fresh goat cheese.
+  description_fr: Cette délicieuse entrée vous surprendra par ses saveurs profondes et intenses. Servez-la avec des craquelins et votre fromage de chèvre frais préféré.
+  source_en: "https://www.bonappetit.com/recipe/pomodori-al-forno"
+  source_fr: "https://www.bonappetit.com/recipe/pomodori-al-forno"
+  instructions_en: |
+    Preheat the oven at 350°F.
+    In a baking dish, combine the olive oil, tomatoes, origano, sugar, salt, and pepper.
+    Bake 3 hours, stirring every 30 minutes.
+    After 3 hours, verify that tomatoes are deep red and that water evaporated. You could need to bake a little longer (up to 30 min). 
+    Remove from oven.
+    Add the freshly crushed garlic when still hot.
+    Let cool down to room temperature.
+    Add fresh basil.
+    Serve with goat cheese and crostini.
+  instructions_fr: |
+    Préchauffer le four à 180°C.
+    Dans un plat allant au four, mélanger l'huile d'olive, les tomates, l'origan, le sucre, le sel et le poivre.
+    Cuire au four pendant 3 heures en remuant toutes les 30 minutes.
+    Après 3 heures, vérifier que les tomates sont bien rouge foncé et que l'eau s'est évaporée. Il faudra peut-être prolonger la cuisson (jusqu'à 30 min).
+    Retirer du four.
+    Ajouter l'ail fraîchement écrasé quand il est encore chaud.
+    Laisser refroidir à température ambiante.
+    Ajouter du basilic frais.
+    Servir avec du fromage de chèvre et des crostinis.
+  prep_time_minutes: 15 minutes
+  cook_time_minutes: 180 minutes
+  servings: 6
+  ingredients: 
+  - name_en: olive oil
+    name_fr: huile d'olive
+    quantity: 0.66
+    unit_en: cup
+    unit_fr: tasse
+  - name_en: large can of diced tomatoes
+    name_fr: grande canne de tomates en dés
+    quantity: 1
+    unit_en: ""
+    unit_fr: ""
+  - name_en: dry origano
+    name_fr: origan séché
+    quantity: 1.5
+    unit_en: tbsp
+    unit_fr: c. à soupe
+  - name_en: sugar
+    name_fr: sucre
+    quantity: 1.5
+    unit_en: tbsp
+    unit_fr: c. à soupe
+  - name_en: salt
+    name_fr: sel
+    quantity: ""
+    unit_en: ""
+    unit_fr: ""
+  - name_en: pepper
+    name_fr: poivre
+    quantity: ""
+    unit_en: ""
+    unit_fr: ""
+  - name_en: garlic cloves
+    name_fr: goussed d'ail
+    quantity: 4
+    unit_en: ""
+    unit_fr: ""
+  - name_en: fresh basil
+    name_fr: basilic frais
+    quantity: 4
+    unit_en: tbsp
+    unit_fr: c. à soupe
+  - name_en: goat cheese
+    name_fr: fromage de chèvre
+    quantity: 200
+    unit_en: grams
+    unit_fr: grammes
+  - name_en: baguette, thinly sliced crosswise, toasted into crostini
+    name_fr: baguette, finement tranchée dans le sens de la largeur, grillée en crostini
+    quantity: 1
+    unit_en: ""
+    unit_fr: ""
+  categories:
+  - name_en: appetizer
+    name_fr: appéritif
+  - name_en: vegetarian
+    name_fr: végétarien
+  images:
+  - image_path: "baked-tomatoes.png"
+    caption_en: Baked tomatoes served with goat cheese and crostini.
+    caption_fr: Tomates cuites au four servies avec fromage de chèvre et crostini.
