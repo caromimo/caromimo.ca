@@ -694,8 +694,8 @@ recipes:
     Laisser refroidir à température ambiante.
     Ajouter du basilic frais.
     Servir avec du fromage de chèvre et des crostinis.
-  prep_time_minutes: 15 minutes
-  cook_time_minutes: 180 minutes
+  prep_time_minutes: 15
+  cook_time_minutes: 180
   servings: 6
   ingredients: 
   - name_en: olive oil
