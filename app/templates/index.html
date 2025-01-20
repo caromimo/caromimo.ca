@@ -6,9 +6,10 @@
 
 <div class="all-details">
 
-    <h2>List of recipes.</h2>
+    <h2>List of recipes</h2>
 
-    <ul>{% for row in ids_and_titles %}
+    <ul>
+        {% for row in ids_and_titles %}
         <a href="{{ url_for('read_recipe', recipe_id=row[0] )}}">
             <li>{{ row[1] }}</li>
         </a>
