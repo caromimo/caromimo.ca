@@ -757,3 +757,87 @@ recipes:
   - image_path: "baked-tomatoes.png"
     caption_en: Baked tomatoes served with goat cheese and crostini.
     caption_fr: Tomates cuites au four servies avec fromage de chèvre et crostini.
+- title_en: Apple Pie
+  title_fr: Tarte aux pommes
+  slug_en: apple-pie
+  slug_fr: tarte-aux-pommes
+  description_en: Delicious apple pie to share with your loved ones.
+  description_fr: Délicieuse tarte aux pommes à partager avec vos proches.
+  source_en: "A family recipe"
+  source_fr: "Une recette familale"
+  instructions_en: |
+    Three hours before starting, remove the butter puff pastry from the freezer.
+    Preheat the oven at 400°F.
+    Grease a 9-inch pie plate.
+    Peel, core, and slice the apples.
+    In a large bowl, combine the sliced apples, sugar, corn starch, and lemon juice. Toss to coat the apples evenly.
+    Carefully transfer one dough to the pie plate abd trim the edges of the crust.
+    Pour the apple filling into the pie crust. It should be really full.
+    Add the remaining pie dough onto the pie. 
+    Fold the sides under to seal the pie crust.  
+    Use a sharp knife to cut vents in the crust.
+    Place the pie on a baking sheet to catch any drips.
+    Bake for 50-60 minutes, or until the crust is golden brown and the filling is bubbling. If the crust browns too quickly, cover the edges with strips of aluminum foil.
+    Let the pie cool completely on a wire rack before slicing and serving. This allows the filling to set properly.
+  instructions_fr: |
+    Trois heures avant de commencer, sortez la pâte feuilletée du congélateur.
+    Préchauffez le four à 200°C (400°F).
+    Graissez un plat à tarte de 23 cm (9 pouces).
+    Épluchez, épépinez et tranchez les pommes.
+    Dans un grand bol, mélangez les pommes tranchées, le sucre, la fécule de maïs et le jus de citron. Remuez pour bien enrober les pommes.
+    Transférez délicatement une des pâtes dans le plat à tarte et coupez les bords de la croûte.
+    Versez la garniture aux pommes dans la croûte. Elle doit être bien pleine.
+    Ajoutez le reste de la pâte à tarte sur la tarte.
+    Repliez les bords en dessous pour sceller la croûte.
+    Utilisez un couteau tranchant pour faire des fentes dans la croûte.
+    Placez la tarte sur une plaque de cuisson pour récupérer les éventuelles éclaboussures.
+    Faites cuire au four pendant 50 à 60 minutes, ou jusqu'à ce que la croûte soit dorée et la garniture bouillonne. Si la croûte brunit trop rapidement, couvrez les bords avec des bandes de papier d'aluminium.
+    Laissez la tarte refroidir complètement sur une grille avant de la trancher et de la servir. Cela permet à la garniture de se figer correctement.
+  prep_time_minutes: 15
+  cook_time_minutes: 60
+  servings: 8
+  ingredients: 
+  - name_en: Irresistible Frozen Butter Puff Pastry (450 g)
+    name_fr: Pâte feuilletée au beurre surgelée Irrésistible (450 g)
+    quantity: 1
+    unit_en: box
+    unit_fr: boite
+  - name_en: MacIntosh apples
+    name_fr: pommes MacIntosh
+    quantity: 2
+    unit_en: ""
+    unit_fr: ""
+  - name_en: Honeycrisp apples
+    name_fr: pommes Honeycrisp
+    quantity: 6
+    unit_en: ""
+    unit_fr: ""
+  - name_en: brown sugar
+    name_fr: cassonnade
+    quantity: 0.5
+    unit_en: cup
+    unit_fr: tasse
+  - name_en: sugar
+    name_fr: sucre
+    quantity: 0.25
+    unit_en: cup
+    unit_fr: tasse
+  - name_en: corn starch
+    name_fr: fécule de maïs
+    quantity: 2
+    unit_en: tbsp
+    unit_fr: c. à soupe
+  - name_en: lemon
+    name_fr: citron
+    quantity: 0.5
+    unit_en: ""
+    unit_fr: ""
+  categories:
+  - name_en: dessert
+    name_fr: dessert
+  - name_en: fall
+    name_fr: automne
+  images:
+  - image_path: "apple-pie.png"
+    caption_en: Homemade apple pie.
+    caption_fr: Tarte aux pommes maison.
