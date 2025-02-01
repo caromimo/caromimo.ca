@@ -34,6 +34,6 @@ GROUP BY
     recipes.instructions_en;
 
 
--- name: get_ids_and_titles_of_recipes()
+-- name: slugs_and_titles()
 -- Get all the recipe ids and titles
-SELECT recipe_id, title_en from recipes;
+SELECT slug_en, title_en from recipes;
