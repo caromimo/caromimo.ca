@@ -1,4 +1,4 @@
--- name: get_recipe_details(recipe_id)^
+-- name: get_recipe_details(slug_en)^
 -- Get all the details for a recipe
 SELECT
     recipes.title_en,
@@ -23,7 +23,7 @@ FROM
     JOIN recipe_ingredients ON recipes.recipe_id = recipe_ingredients.recipe_id
     JOIN ingredients ON recipe_ingredients.ingredient_id = ingredients.ingredient_id
 WHERE
-    recipes.recipe_id = :recipe_id
+    recipes.slug_en = :slug_en
 GROUP BY
     recipes.title_en,
     recipes.slug_en,

@@ -36,10 +36,10 @@ async def index(request: Request):
     )
 
 
-@app.get("/recipes/{recipe_id}", response_class=HTMLResponse)
-async def read_recipe(request: Request, recipe_id):
+@app.get("/recipes/{slug_en}", response_class=HTMLResponse)
+async def read_recipe(request: Request, slug_en):
     try:
-        recipe_id = int(recipe_id)
+        slug_en = slug_en
     except ValueError:
         return templates.TemplateResponse(request=request, name="404.html")
 
@@ -51,12 +51,11 @@ async def read_recipe(request: Request, recipe_id):
         source_en,
         ingredients,
         instructions_en,
-    ] = queries.get_recipe_details(connection, recipe_id=recipe_id)
+    ] = queries.get_recipe_details(connection, slug_en=slug_en)
     return templates.TemplateResponse(
         request=request,
         name="recipe.html",
         context={
-            "recipe_id": recipe_id,
             "slug_en": slug_en,
             "title_en": title_en,
             "image_path": image_path,
