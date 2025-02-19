@@ -1,6 +1,7 @@
 body {
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: minmax(0, 1fr);
     min-height: 100dvh;
     margin: 0;
     font-family: "Red Hat Display", serif;
@@ -22,10 +23,10 @@ main {
 }
 
 footer {
-    min-height: 5em;
+    padding: 2em 0;
     text-align: center;
     font-family: 'Red Hat Display';
-    margin: 5em 0 5em 0;
+
 }
 
 h1 {
