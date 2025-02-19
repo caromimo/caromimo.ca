@@ -6,13 +6,13 @@
 
 <article>
     <picture class="box">
-        <img class="food" src="{{ url_for('static', path='pictures/' + image_path)}}" />
+        <img src="{{ url_for('static', path='pictures/' + image_path)}}" />
     </picture>
 
     <section id="details" class="box">
         <h1>{{title_en}}</h1>
         <p>{{description_en}}</p>
-        <p>Credits:
+        <p>Credit:
             <a href="{{source_en}}">{{title_en}}</a>
         </p>
     </section>
