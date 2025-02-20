@@ -28,6 +28,11 @@ h1 {
 
 img.food {
     width: 100%;
+    min-height: 600px;
+}
+
+section {
+    padding: 0 0.5em;
 }
 
 .menu {
@@ -36,6 +41,30 @@ img.food {
     width: 100%;
 }
 
-section {
-    padding: 0 0.5em;
+
+@media screen and (min-width: 1000px) {
+    article {
+        display: grid;
+        /*border: 12px solid blue;*/
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1em;
+    }
+
+    #details {
+        border: 1px solid grey;
+        border-radius: 25px;
+        margin-top: 2em;
+    }
+
+    #ingredients {
+        border: 1px solid grey;
+        border-radius: 25px;
+        margin-top: 2em;
+    }
+
+    #instructions {
+        border: 1px solid grey;
+        border-radius: 25px;
+        margin-top: 2em;
+    }
 }
