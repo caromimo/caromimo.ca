@@ -68,7 +68,11 @@ section {
         font-size: 2em;
     }
 
-    ul li {
+    ul {
+        margin-bottom: 1em;
+    }
+
+    li {
         margin-bottom: 1em;
     }
 
