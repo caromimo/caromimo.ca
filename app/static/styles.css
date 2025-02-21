@@ -5,6 +5,7 @@ body {
     min-height: 100dvh;
     font-family: "Red Hat Display", serif;
     margin: 0;
+    font-size: larger;
 }
 
 header {
@@ -47,24 +48,51 @@ section {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1em;
-        margin: 1em 10em;
+        margin: 3em 10em;
+        padding: 3em;
+    }
+
+    picture {
+        width: 75%;
+        display: block;
+        margin: 0 auto;
+        border-radius: 5%;
+        overflow: hidden;
+    }
+
+    h1 {
+        font-size: 3em;
+    }
+
+    h2 {
+        font-size: 2em;
+    }
+
+    ul li {
+        margin-bottom: 1em;
     }
 
     #details {
-        border: 1px solid grey;
+        /*border: 1px solid grey;*/
         border-radius: 25px;
         margin-top: 2em;
     }
 
     #ingredients {
-        border: 1px solid grey;
+        /*border: 1px solid grey;*/
         border-radius: 25px;
         margin-top: 2em;
+        padding: 0em 4em 0em;
     }
 
     #instructions {
-        border: 1px solid grey;
+        /*border: 1px solid grey;*/
         border-radius: 25px;
         margin-top: 2em;
+        padding: 0em 4em 0em;
+    }
+
+    #index {
+        margin: 7em;
     }
 }
