@@ -1,0 +1,21 @@
+{% extends "base.html" %}
+
+{% block title %}Recipe Index{% endblock %}
+
+{% block content %}
+
+<section id="index">
+
+    <h2>Liste de recettes</h2>
+
+    <ul>
+        {% for row in slugs_et_titres %}
+        <a href="{{ url_for('lire_recette', slug_fr=row[0] )}}">
+            <li>{{ row[1] }}</li>
+        </a>
+        {% endfor %}
+    </ul>
+
+</section>
+
+{% endblock %}

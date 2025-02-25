@@ -1,0 +1,38 @@
+{% extends "base_fr.html" %}
+
+{% block title %}Details de la recette{% endblock %}
+
+{% block content %}
+
+<article>
+    <picture class="box">
+        <img class="food" src="{{ url_for('static', path='pictures/' + image_path)}}" />
+    </picture>
+
+    <section id="details" class="box">
+        <h1>{{title_fr}}</h1>
+        <p>{{description_fr}}</p>
+        <p>Credit:
+            <a href="{{source_fr}}">{{title_fr}}</a>
+        </p>
+    </section>
+
+    <section id="ingredients" class="box">
+        <h2>Ingrédients: </h2>
+        <ul>{% for ingredient in ingredients_fr %}
+            <li>{{ ingredient["quantity"]}} {{ ingredient["unit"] }} {{ ingredient["ingredient"] }}</li>
+            {% endfor %}
+        </ul>
+    </section>
+
+    <section id="instructions" class="box">
+        <h2>Instructions: </h2>
+        <ol>{% for instruction in instructions_fr.splitlines() %}
+            <li>{{ instruction }}</li>
+            {% endfor %}
+        </ol>
+    </section>
+
+</article>
+
+{% endblock %}
