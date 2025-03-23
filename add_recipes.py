@@ -10,10 +10,10 @@ import os
 
 # Database connection details
 db_params = {
-    "host": "localhost",
-    "user": os.environ["DATABASE_USER"],
-    "database": os.environ["DATABASE"],
-    "password": os.environ["DATABASE_PASSWORD"],
+    "host": os.environ["PGHOST"],
+    "user": os.environ["PGUSER"],
+    "database": os.environ["PGDATABASE"],
+    "password": os.environ["PGPASSWORD"],
 }
 
 
