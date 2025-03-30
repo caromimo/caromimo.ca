@@ -11,7 +11,7 @@ app = FastAPI()
 
 
 connection = dbapi.connect(
-    host="localhost",
+    host=os.environ["DATABASE_HOST"],
     database=os.environ["DATABASE"],
     user=os.environ["DATABASE_USER"],
     password=os.environ["DATABASE_PASSWORD"],

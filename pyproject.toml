@@ -28,7 +28,9 @@ connect = { shell = "psql --host=localhost --username=$DATABASE_USER --dbname=$D
 destroy = { shell = "docker stop $(docker ps -q)" }
 migration = "migrate create -ext sql -dir migrations -seq"
 migrateup = { shell = "migrate -database $DATABASE_URL -path migrations up" }
+migrate_neon = {shell = "migrate -database $DATABASE_URL -path migrations up", env_file.override = ".env.prod"}
 migratedown = { shell = "migrate -database $DATABASE_URL -path migrations down 1" }
 server = "uvicorn app.main:app --reload --host 0.0.0.0 --port 8000"
-recipes = "add_recipes.py"
+load_recipes = "add_recipes.py"
+load_recipes_neon = {cmd = "add_recipes.py", env_file.override = ".env.prod"}
 repl = "python"

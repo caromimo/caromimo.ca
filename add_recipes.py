@@ -8,19 +8,15 @@ import os
 #     print(recipes)
 
 
-# Database connection details
-db_params = {
-    "host": os.environ["PGHOST"],
-    "user": os.environ["PGUSER"],
-    "database": os.environ["PGDATABASE"],
-    "password": os.environ["PGPASSWORD"],
-}
-
-
 def insert_recipe_data(recipe_data):
     conn = None  # Initialize conn outside the try block
     # Connect to the database
-    conn = psycopg2.connect(**db_params)
+    conn = psycopg2.connect(
+        host=os.environ["DATABASE_HOST"],
+        database=os.environ["DATABASE"],
+        user=os.environ["DATABASE_USER"],
+        password=os.environ["DATABASE_PASSWORD"],
+    )
     cur = conn.cursor()
 
     for recipe in recipe_data["recipes"]:
